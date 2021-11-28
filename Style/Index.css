@@ -13,7 +13,29 @@ body {
   grid-template-rows: 90vh repeat(5, max-content);
   grid-template-columns: repeat(6, 1fr);
 }
+/* h3 style  */
+.Heading {
+  text-align: center;
+  padding: 20px;
+  font-size: 35px;
+  color: #388e3c;
+}
 
+.Heading::before,
+.Heading::after {
+  content: "";
+  background-color: #bf360c;
+  display: inline-block;
+  position: relative;
+  height: 2px;
+  width: 30%;
+  vertical-align: middle;
+}
+@media screen and (max-width: 310px) {
+  .Heading {
+    font-size: 20px;
+  }
+}
 /* header */
 .header {
   /* background-color: #000; */
@@ -65,8 +87,8 @@ body {
 }
 /* books */
 .book {
-  background-color: blue;
   grid-column: 1 / span5;
+  background-color: #dda15e;
 }
 .image {
   width: 100%;
