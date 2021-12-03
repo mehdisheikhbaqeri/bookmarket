@@ -8,8 +8,56 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #b6ad90;
 }
+/* nav bar  */
+.navbar {
+  background-color: #bf360c;
+}
+.navbar-brand {
+  font-family: "Lobster", curs;
+}
+.bi-archive,
+.bi-book-half,
+.bi-emoji-smile-fill {
+  color: #d8f3dc;
+}
+.bi-archive:hover,
+.bi-book-half:hover:hover,
+.bi-emoji-smile-fill:hover {
+  color: #388e3c;
+}
+.btn-outline-primary {
+  color: #388e3c;
+  border: 1px solid #388e3c;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #388e3c;
+  border: 1px solid #388e3c;
+}
+placeholder {
+  color: #388e3c;
+}
+@media screen and (max-width: 345px) {
+  .navbar-brand {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+.navbar-brand {
+  color: #388e3c !important;
+}
+.navbar {
+  background-color: #1b4332 !important ;
+}
+.form-control:active {
+  border: #bf360c !important;
+}
 /* main */
-.container {
+.container-fluid {
   display: grid;
   grid-template-rows: 90vh repeat(5, max-content);
   grid-template-columns: repeat(6, 1fr);
@@ -21,7 +69,6 @@ body {
   font-size: 35px;
   color: #388e3c;
 }
-
 .Heading::before,
 .Heading::after {
   content: "";
@@ -102,7 +149,7 @@ body {
   transform: rotate(2deg) scale(1.08);
   transition: 3ms;
 }
-@media screen and (max-width: 664px) {
+@media screen and (max-width: 767px) {
   .image-4 {
     grid-column: 2/3;
   }
